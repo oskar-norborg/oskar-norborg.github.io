@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSG model — TraceFive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">TraceFive</span>
+    <a href="index.html">Overview</a>
+    <a href="universe.html">Universe</a>
+    <a href="comps.html">Comps</a>
+    <a class="on" href="model.html">RSG model</a>
+    <a href="long.html">Long</a>
+    <a href="short.html">Bear</a>
+    <a href="method.html">Method</a>
+  </nav>
+  <main>
+    <div class="kicker">Republic Services · FY2025 clock</div>
+    <h1>$114.93 is a formula, not a bid.</h1>
+    <p class="lede">One-stage Gordon. Every cash-flow and balance-sheet input is FY2025. No June 30 debt. No 307.6 million share count.</p>
+    <table>
+      <thead><tr><th>Line</th><th>Value</th><th>Where it comes from</th></tr></thead>
+      <tbody>
+        <tr><td>Cash from operations</td><td>4,296</td><td>FY2025 cash-flow statement</td></tr>
+        <tr><td>Capex</td><td>1,887</td><td>Purchases of property and equipment</td></tr>
+        <tr><td>Free cash flow</td><td>2,409</td><td>CFO minus capex</td></tr>
+        <tr><td>Gross debt</td><td>13,581</td><td>Current maturities 596 + long-term 12,985</td></tr>
+        <tr><td>Cash</td><td>76</td><td>Cash and cash equivalents</td></tr>
+        <tr><td>Net debt</td><td>13,505</td><td>Debt minus cash</td></tr>
+        <tr><td>Diluted shares</td><td>312.2 million</td><td>FY2025 weighted average</td></tr>
+        <tr><td>Acquisition cash</td><td>1,430</td><td>Not in FCF. Used in the bear memo.</td></tr>
+        <tr><td>WACC</td><td>7.5%</td><td>Unsourced assumption</td></tr>
+        <tr><td>Perpetual growth</td><td>2.5%</td><td>Unsourced assumption</td></tr>
+      </tbody>
+    </table>
+    <h2>Identity</h2>
+    <p><code>EV = 2409 × 1.025 / (0.075 − 0.025) = 49,384.5</code></p>
+    <p><code>Equity = 49,384.5 − 13,505 = 35,879.5</code></p>
+    <p><code>Value per share = 35,879.5 / 312.2 = 114.93</code></p>
+    <p>The cited last sale is $209.96 on 30 Sep 2026 at 15:59 ET. The model is below that print because it grows today’s free cash flow at 2.5% forever. That is a statement about the assumptions, not a trade.</p>
+  </main>
+</body>
+</html>
