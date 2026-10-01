@@ -1,0 +1,53 @@
+:root {
+  --bg: #f3efe6;
+  --ink: #1b1814;
+  --muted: #5c564c;
+  --line: #d8d0c3;
+  --card: #fffdf8;
+  --accent: #8a3828;
+  --ok: #1e4a3b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 18px 20px 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+}
+nav a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+nav a.on, nav a:hover { border-bottom-color: var(--accent); }
+nav .brand { font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; margin-right: 8px; }
+main { max-width: 1040px; margin: 0 auto; padding: 22px 20px 56px; }
+h1 { font-size: 40px; line-height: 1.05; margin: 8px 0 12px; font-weight: 560; }
+h2 { font-size: 22px; margin: 28px 0 8px; }
+.kicker { letter-spacing: 0.14em; text-transform: uppercase; font-size: 12px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+.lede { font-size: 20px; max-width: 42em; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 18px 0; }
+.card { background: var(--card); border: 1px solid var(--line); padding: 16px; }
+.card span, .note, th { font-family: ui-sans-serif, system-ui, sans-serif; }
+.card span { display: block; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.card strong { display: block; font-size: 28px; margin-top: 6px; }
+.warn { color: var(--accent); }
+table { width: 100%; border-collapse: collapse; background: var(--card); }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+th { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.note { font-size: 13px; color: var(--muted); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+a.file { color: var(--accent); }
+@media (max-width: 800px) {
+  .grid, .two { grid-template-columns: 1fr; }
+  h1 { font-size: 32px; }
+}
